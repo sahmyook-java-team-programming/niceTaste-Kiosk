@@ -1,5 +1,6 @@
 package kr.ac.sahmyook.nicetaste.kiosk.func;
 
+import kr.ac.sahmyook.nicetaste.kiosk.user.User;
 import kr.ac.sahmyook.nicetaste.kiosk.view.Menu;
 
 import java.util.Scanner;
