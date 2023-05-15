@@ -1,17 +1,16 @@
 package kr.ac.sahmyook.nicetaste.kiosk.func;
 
-import kr.ac.sahmyook.nicetaste.kiosk.view.Menu;
 import java.util.Scanner;
 
 public class FirstOrderConfirm {
     Scanner sc = new Scanner(System.in);
-    Menu menu = new Menu();
+    Order order = new Order();
     public void userOrder() {
         do {
             System.out.print("음료를 주문하시겠습니까? (Y/N) ");
             char x = sc.nextLine().charAt(0);
             if(x == 'y' || x == 'Y') {
-                menu.showMenu();
+                order.userOrder();
                 break;
             } else if (x == 'n' || x == 'N') {
                 System.out.println("프로그램을 종료합니다.");
