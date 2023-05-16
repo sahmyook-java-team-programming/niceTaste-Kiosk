@@ -6,13 +6,13 @@ import java.util.Scanner;
 public class FirstOrderConfirm {
     Scanner sc = new Scanner(System.in);
     Menu menu = new Menu();
-    public void userOrder() {
+    public void userOrder(){
+
         do {
             System.out.print("음료를 주문하시겠습니까? (Y/N) ");
             char x = sc.nextLine().charAt(0);
             if(x == 'y' || x == 'Y') {
                 menu.showMenu();
-                break;
             } else if (x == 'n' || x == 'N') {
                 System.out.println("프로그램을 종료합니다.");
                 return;
@@ -22,6 +22,5 @@ public class FirstOrderConfirm {
                 break;
             }
         } while(true);
-
     }
 }
