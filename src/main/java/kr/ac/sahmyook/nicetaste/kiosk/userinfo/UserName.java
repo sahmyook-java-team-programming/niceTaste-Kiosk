@@ -9,7 +9,7 @@ public class UserName {
     }
 
     public String getNickName() {
-        System.out.println(this.nickName + " 님 주문하신 음료 나왔습니다.");
+        System.out.println("\n" + this.nickName + " 님 주문하신 음료 나왔습니다.");
         return nickName;
     }
 

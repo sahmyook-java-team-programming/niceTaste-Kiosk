@@ -1,6 +1,6 @@
 package kr.ac.sahmyook.nicetaste.kiosk.drink;
 
-public class Coffee {
+public class MakeCoffee {
     public void putWater() {
         System.out.println("물을 넣는다.");
     }

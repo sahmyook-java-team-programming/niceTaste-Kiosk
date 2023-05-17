@@ -1,6 +1,6 @@
 package kr.ac.sahmyook.nicetaste.kiosk.drink;
 
-public class CafeLatte extends Coffee implements Milk, Syrup{
+public class MakeCafeLatte extends MakeCoffee implements MakeMilk, MakeSyrup {
 
 
     @Override
