@@ -12,7 +12,6 @@ public class FirstOrderConfirm {
             char x = sc.nextLine().charAt(0);
             if(x == 'y' || x == 'Y') {
                 menu.showMenu();
-                break;
             } else if (x == 'n' || x == 'N') {
                 System.out.println("프로그램을 종료합니다.");
                 return;
@@ -22,6 +21,5 @@ public class FirstOrderConfirm {
                 break;
             }
         } while(true);
-
     }
 }
