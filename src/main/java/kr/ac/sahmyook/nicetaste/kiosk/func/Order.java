@@ -1,6 +1,6 @@
 package kr.ac.sahmyook.nicetaste.kiosk.func;
 
-import kr.ac.sahmyook.nicetaste.kiosk.user.User;
+import kr.ac.sahmyook.nicetaste.kiosk.userinfo.UserDrinkNum;
 import kr.ac.sahmyook.nicetaste.kiosk.view.Menu;
 
 import java.util.Scanner;
@@ -13,29 +13,9 @@ public class Order {
     public Order() {
     }
 
-    public Order(String drinkName, int drinkNum) {
-        this.drinkName = drinkName;
-        this.drinkNum = drinkNum;
-    }
+    public int[] userOrder() {
 
-    public String getDrinkName() {
-        return drinkName;
-    }
-
-    public void setDrinkName(String drinkName) {
-        this.drinkName = drinkName;
-    }
-
-    public int getDrinkNum() {
-        return drinkNum;
-    }
-
-    public void setDrinkNum(int drinkNum) {
-        this.drinkNum = drinkNum;
-    }
-
-    public void userOrder() {
-        User user1 = new User();
+        UserDrinkNum user1 = new UserDrinkNum();
 
         do {
             Scanner sc = new Scanner(System.in);
@@ -55,10 +35,10 @@ public class Order {
             } else if (drinkName.equals("바닐라라떼")) {
                 user1.setVanillaLatte_num(user1.getVanillaLatte_num() + drinkNum);
             }
+
         } while (new AddOrder().addPrint());
 
-        new UserName().getName();
-
-
+        int[] cnt = {user1.getAmericano_num(),user1.getCafeLatte_num(),user1.getVanillaLatte_num()};
+        return cnt;
     }
 }
